@@ -1,0 +1,91 @@
+{ "className": "ataturk_ilkeleri_ve_inkilap_tarihi_1", "unitNumber": 2, "number": 1, "text": "1839 Tanzimat Fermanı’nı hazırlayan ve Gülhane’de okuyan devlet adamı aşağıdakilerden hangisidir?", "answers": [
+        ["Mehmet Emin Ali Paşa", false],
+        ["Mustafa Reşit Paşa", true],
+        ["Hüsrev Paşa", false],
+        ["Keçecizade Fuat Paşa", false],
+        ["Mahmut Nedim Paşa", false]
+    ] }, { "className": "ataturk_ilkeleri_ve_inkilap_tarihi_1", "unitNumber": 2, "number": 2, "text": "Türk Boğazlarının statüsü ile ilgili 1841’de hangi antlaşma yapılmıştır?", "answers": [
+        ["Paris Antlaşması", false],
+        ["Balta Limanı Antlaşası", false],
+        ["Hünkâr İskelesi Antlaşması", false],
+        ["Londra Antlaşması", true],
+        ["Berlin Antlaşması", false]
+    ] }, { "className": "ataturk_ilkeleri_ve_inkilap_tarihi_1", "unitNumber": 2, "number": 3, "text": "Avrupa’da meydana gelen 1848 İhtilalleri sonrasında Osmanlı hangi milletten sığınmacılara kapısını açtı ve Rusya ile mülteciler sorunu yaşadı? ", "answers": [
+        ["Polonya-Macar", true],
+        ["Eflak-Boğdan", false],
+        ["Romanya-Erdel", false],
+        ["Lehistan-Polonya", false],
+        ["İngiltere-Fransa", false]
+    ] }, { "className": "ataturk_ilkeleri_ve_inkilap_tarihi_1", "unitNumber": 2, "number": 4, "text": "Tanzimat reformları kapsamında 1854 yılında ilk Şehremaneti/Belediye idaresi hangi vilayette kuruldu?", "answers": [
+        ["Selanik", false],
+        ["Bursa", false],
+        ["Cidde", false],
+        ["Edirne", false],
+        ["İstanbul", true]
+    ] }, { "className": "ataturk_ilkeleri_ve_inkilap_tarihi_1", "unitNumber": 2, "number": 5, "text": "Ahmet Cevdet Paşa başkanlığında bir komisyon tarafından 1858’de hazırlanan Arazi Kanunu’nun en önemli özelliği nedir? ", "answers": [
+        ["Fransa’dan etkilenilmesi", false],
+        ["Millî olması", true],
+        ["Padişahın onaylamaması", false],
+        ["Vergi mevzuatı içermesi", false],
+        ["Harameyn ile ilgili olması", false]
+    ] }, { "className": "ataturk_ilkeleri_ve_inkilap_tarihi_1", "unitNumber": 2, "number": 6, "text": "Osmanlı’da Avrupa usulü ilk yükseköğretim kurumu aşağıdakilerden hangisidir?", "answers": [
+        ["Encümen-i Dâniş", false],
+        ["Meclis-i Maarif", false],
+        ["Darüşşafaka", false],
+        ["Darülfünun", true],
+        ["Rüştiye", false]
+    ] }, { "className": "ataturk_ilkeleri_ve_inkilap_tarihi_1", "unitNumber": 2, "number": 7, "text": "1859 Kuleli Vakası hangi padişaha karşı bir darbe girişimi idi?", "answers": [
+        ["II. Mahmut", false],
+        ["I. Abdülaziz", false],
+        ["V. Murat", false],
+        ["III. Selim", false],
+        ["I. Abdülmecit", true]
+    ] }, { "className": "ataturk_ilkeleri_ve_inkilap_tarihi_1", "unitNumber": 2, "number": 8, "text": "Kudüs’teki “Kutsal Yerler Sorunu” hangi ülke ile savaşın sebeplerinden biri olmuştur? ", "answers": [
+        ["Avusturya", false],
+        ["Portekiz", false],
+        ["Rusya", true],
+        ["Yunanistan", false],
+        ["İsrail ", false]
+    ] }, { "className": "ataturk_ilkeleri_ve_inkilap_tarihi_1", "unitNumber": 2, "number": 9, "text": "Rus donanması, Kırım Harbi’nde Karadeniz’in hangi limanında Osmanlı donanmasını batırmıştır? ", "answers": [
+        ["Canik", false],
+        ["Batum", false],
+        ["Trabzon", false],
+        ["Sinop", true],
+        ["Sivastopol", false]
+    ] }, { "className": "ataturk_ilkeleri_ve_inkilap_tarihi_1", "unitNumber": 2, "number": 10, "text": "Osmanlı Devleti, ilk defa hangi yıl yabancı bir ülkeden dış borç almak durumunda kalmıştır?", "answers": [
+        ["1854", true],
+        ["1839", false],
+        ["1856", false],
+        ["1881", false],
+        ["1878 ", false]
+    ] }, { "className": "ataturk_ilkeleri_ve_inkilap_tarihi_1", "unitNumber": 2, "number": 11, "text": "Aşağıdaki maddelerden hangisi 1856 Islahat Fermanı’nda yer almamıştır?", "answers": [
+        ["Can, mal ve namus emniyeti", false],
+        ["Din ve mezhep güvencesi", false],
+        ["Vergi eşitliği", false],
+        ["Yeni bir anayasa", true],
+        ["Askerî yükümlülükler", false]
+    ] }, { "className": "ataturk_ilkeleri_ve_inkilap_tarihi_1", "unitNumber": 2, "number": 12, "text": "Sultan Abdülaziz’e yapılan darbenin öncülerinden olup Seraskerlik makamında bulunan asker hangisidir? ", "answers": [
+        ["Mithat Paşa", false],
+        ["Hasan Hayrullah Efendi", false],
+        ["Hüseyin Avni Paşa", true],
+        ["Mahmut Nedim Paşa", false],
+        ["Mütercim Rüştü Paşa", false]
+    ] }, { "className": "ataturk_ilkeleri_ve_inkilap_tarihi_1", "unitNumber": 2, "number": 13, "text": "Akdeniz ile Kızıldeniz’i birbirine bağlayan Süveyş Kanalı hangi tarihte açılmıştır? ", "answers": [
+        ["1839", false],
+        ["1869", true],
+        ["1856", false],
+        ["1821", false],
+        ["1815", false]
+    ] }, { "className": "ataturk_ilkeleri_ve_inkilap_tarihi_1", "unitNumber": 2, "number": 14, "text": "Sultan Abdülaziz, 1867 Avrupa seyahatinde aşağıdaki hangi şehre uğramamıştır?", "answers": [
+        ["Brüksel", false],
+        ["Viyana", false],
+        ["Paris", false],
+        ["Londra", false],
+        ["Atina", true]
+    ] }, { "className": "ataturk_ilkeleri_ve_inkilap_tarihi_1", "unitNumber": 2, "number": 15, "text": "Aşağıdakilerden hangileri, Sultan Abdülaziz dönemi gelişmeleri arasında yer almaktadır? I. Mekteb-i Sultani’nin kurulması II. Birinci Meşrutiyet’in ilanı III. İkinci  Meşrutiyet’in ilanı", "answers": [
+        ["Yalnızca I", true],
+        ["Yalnızca II", false],
+        ["I ve III", false],
+        ["II ve III", false],
+        ["I, II ve III", false]
+    ] },

@@ -1,0 +1,61 @@
+{ "className": "matematik_1", "unitNumber": 3, "number": 1, "text": " 34 yaşındaki babanın yaşı, oğlunun yaşının 5 katından 6 eksik ise oğlunun yaşı kaçtır?", "answers": [
+        ["28", false],
+        ["27", false],
+        ["17", false],
+        ["16", false],
+        ["8", true]
+    ] }, { "className": "matematik_1", "unitNumber": 3, "number": 2, "text": "denkleminin çözümü aşağıdakilerden hangisidir?", "answers": [
+        ["1", false],
+        ["2", false],
+        ["3", false],
+        ["4", true],
+        ["5", false]
+    ] }, { "className": "matematik_1", "unitNumber": 3, "number": 3, "text": "Aşağıda verilen denkleminin çözüm kümesi hangisidir?", "answers": [
+        ["\n    \n        \n", false],
+        ["\n    \n        \n", false],
+        ["\n    \n        \n", true],
+        ["\n    \n        \n", false],
+        ["\n    \n        \n", false]
+    ] }, { "className": "matematik_1", "unitNumber": 3, "number": 4, "text": "denkleminin çözüm kümesi aşağıdakilerden hangisidir?", "answers": [
+        ["\n    \n        \n", false],
+        ["\n    \n        \n", true],
+        ["\n    \n        \n", false],
+        ["\n    \n        \n", false],
+        ["\n    \n        \n", false]
+    ] }, { "className": "matematik_1", "unitNumber": 3, "number": 5, "text": "denkleminin\nçözümü aşağıdakilerden hangisidir?", "answers": [
+        ["-3", false],
+        ["-2", false],
+        ["2", false],
+        ["3", true],
+        ["\n    \n        \n", false]
+    ] }, { "className": "matematik_1", "unitNumber": 3, "number": 6, "text": "denkleminin\nçözüm kümesi aşağıdakilerden hangisidir?", "answers": [
+        ["\n    \n        \n", false],
+        ["\n    \n        \n", false],
+        ["\n    \n        \n", false],
+        ["\n    \n        \n", false],
+        ["\n    \n        \n", true]
+    ] }, { "className": "matematik_1", "unitNumber": 3, "number": 7, "text": "denkleminin\nçözüm kümesi aşağıdakilerden hangisidir?", "answers": [
+        ["\n    \n        \n", true],
+        ["\n    \n        \n", false],
+        ["\n    \n        \n", false],
+        ["\n    \n        \n", false],
+        ["\n    \n        \n", false]
+    ] }, { "className": "matematik_1", "unitNumber": 3, "number": 8, "text": "eşitsizliğinin çözüm aralığı nedir?", "answers": [
+        ["\n    \n        \n", false],
+        ["\n    \n        \n", false],
+        ["\n    \n        \n", false],
+        ["\n    \n        \n", true],
+        ["\n    \n        \n", false]
+    ] }, { "className": "matematik_1", "unitNumber": 3, "number": 9, "text": "eşitsizliğinin çözüm kümesi aşağıdakilerden hangisidir?", "answers": [
+        ["\n    \n        \n", false],
+        ["\n    \n        \n", false],
+        ["\n    \n        \n", true],
+        ["\n    \n        \n", false],
+        ["\n    \n        \n", false]
+    ] }, { "className": "matematik_1", "unitNumber": 3, "number": 10, "text": "Bir\nürünün arz denklemi  ve talep denklemiise pazar denge noktası aşağıdakilerden\nhangisidir. Doğru denklemlerinin eşitliği (doğruların kesişim noktası)?", "answers": [
+        ["\n    \n        \n", false],
+        ["\n    \n        \n", false],
+        ["\n    \n        \n", false],
+        ["\n    \n        \n", true],
+        ["\n    \n        \n", false]
+    ] },
