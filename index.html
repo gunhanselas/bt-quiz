@@ -7,62 +7,85 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="./js/vue.js"></script>
-    <script src="./Json/genel-iktisat.json"></script>
-    <script src="./js/main.js"></script>
+    
 
     <title>Document</title>
 </head>
 
 <body>
 
-    <div class="container-sm">
+    <div class="container-md">
         <header>
             <h1>AUZEF YBS</h1>
             <h2>bir çeşit sınavmatik</h2>
         </header>
-        <div id="quizerForm" class="d-none">
-            <form id="quizForm">
-                <div class="form-group p-5">
+        <div class="">
+            <form id="quizerForm">
+                <div class="form-group py-5">
                     <label for="dersSeçimi">ders seçiyoruz</label>
                     <select id="class" name="class" class="form-control form-control-lg m-2">
-                        <option value="matematik_1" selected>Matematik 1</option>
+                       
                     </select>
 
                     <label for="sınavSeçimi">ne çeşit bir sınav istediğimizi seçiyoruz</label>
                     <div class="custom-control custom-radio m-2">
-                        <input type="radio" id="customRadioInline1" name="quiz" value="quiz" class="custom-control-input" checked>
+                        <input type="radio" id="customRadioInline1" name="quiz" value="midTerm" class="custom-control-input" checked>
                         <label class="custom-control-label" for="customRadioInline1">vize</label>
                     </div>
                     <div class="custom-control custom-radio m-2">
                         <input type="radio" id="customRadioInline2" name="quiz" value="final" class="custom-control-input">
                         <label class="custom-control-label" for="customRadioInline2">final</label>
                     </div>
-                    <button type="button" class="btn btn-dark btn-lg btn-block" onclick="bas()">Başla!</button>
+                    <button type="button" class="btn btn-dark btn-lg btn-block" onclick="start()">Başla!</button>
                 </div>
             </form>
         </div>
         <div id="quizerSelf" class="mt-5">
-            <div class="card-deck">
-                <div class="card">
-                    <img class="card-img-top" src="..." alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated 3 minsss ago</small>
-                    </div>
-                </div>
 
+
+            <div class="row">
+<!--                 <div class="col-md-6 mb-2">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Aşağıdakilerden hangisi iktisat biliminin cevap aradığı bir soru değildir?</h5>
+                          </div>
+                          <div class="card-body">
+                              <form class="form">
+                                <div class="inputGroup">
+                                    <input id="radio11" name="radio" type="radio" value="ture"/>
+                                    <label for="radio11">Hangi mallar üretilecek?</label>
+                                </div>
+                                <div class="inputGroup">
+                                    <input id="radio12" name="radio" type="radio"/>
+                                    <label for="radio12">Mallar nasıl üretilecek?</label>
+                                </div>
+                                <div class="inputGroup">
+                                    <input id="radio13" name="radio" type="radio"/>
+                                    <label for="radio13">Malların üretilmesinden kim sorumlu olacak?</label>
+                                </div>
+                                <div class="inputGroup">
+                                    <input id="radio14" name="radio" type="radio"/>
+                                    <label for="radio14">Ne kadar mal üretilecek?</label>
+                                </div>
+                            </form>                            
+                          </div>
+                    </div>
+                  </div> -->
+                  
+                  
+                       
             </div>
+            
+
+
         </div>
 
     </div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="./datas//data.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 
