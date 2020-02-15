@@ -1,4 +1,4 @@
-header {
+/* header {
     border-bottom: 5px solid black;
     padding: 5px;
 }
@@ -108,4 +108,18 @@ header {
     background-color: #9aa3ac;
     padding: 0 8px;
   }
-  
+   */
+   .card-body input:checked  + label{
+    font-weight: bold;
+    color: #fff;
+    background-color: #6c757d;
+   }
+   .card-body input  + label{
+    color: #343a40;
+    padding: .5rem;
+    display: block;
+    border-radius: .25rem;
+    border: 1px solid #dee2e6;
+    cursor: pointer;
+    background-color: #eee;
+   }
