@@ -119,7 +119,32 @@ function calculate() {
         let totalScore = correctLength - (wrongLength/4);
 
         $(".row").prepend(`${totalQA} soruda ${correctLength} doğru ${wrongLength} yanlış ${noAnswerLength} boş. Toplam puanın ${totalScore}. </br>`);
-        
+        sAnswers.forEach(function(el,index){
+            console.log(el);
+            if(el.value === "true") {
+            $(".card").eq(index).addClass("border-success");
+            $(".card-footer").eq(index).addClass("bg-success text-white");   $(".card-footer").eq(index).removeClass("text-muted");
+            let checkedInput = $("input:checked");
+            let radioID = $(".card").eq(index).find(checkedInput).attr("id");
+            $("label[for='"+ radioID +"']").addClass("bg-success");
+            }
+            else if (el.value === "false") {
+                $(".card").eq(index).addClass("border-danger");
+                $(".card-footer").eq(index).addClass("bg-danger text-white");   $(".card-footer").eq(index).removeClass("text-muted");
+                let checkedInput = $("input:checked");
+                let correctAnswerRadioID = $("input[value='true']").eq(index).attr("id");
+                let radioID = $(".card").eq(index).find(checkedInput).attr("id");
+                $("label[for='"+ radioID +"']").addClass("bg-danger");
+                $("label[for='"+ correctAnswerRadioID +"']").addClass("bg-success text-white");
+            }
+            else {
+                $(".card").eq(index).addClass("border-warning");
+                let correctAnswerRadioID = $("input[value='true']").eq(index).attr("id");
+                $("label[for='"+ correctAnswerRadioID +"']").addClass("bg-success text-white");
+                $(".card-footer").eq(index).addClass("bg-warning text-white");   $(".card-footer").eq(index).removeClass("text-muted");
+            }
+
+        });
         
 
      
