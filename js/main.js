@@ -61,8 +61,8 @@ else if(qType === "final") {
 
                     
                     questionTemplate += `<div class="inputGroup">
-                    <input id="radio${e[0]}-${e[1]}-${ia}" name="${qqn + 1}" type="radio" value="${a[2]}"/>
-                    <label for="radio${e[0]}-${e[1]}-${ia}">${a[0]}</label>
+                    <input class="d-none" id="radio${e[0]}-${e[1]}-${ia}" name="${qqn + 1}" type="radio" value="${a[2]}"/>
+                    <label  for="radio${e[0]}-${e[1]}-${ia}">${a[0]}</label>
                 </div>`;
                     
                 });
@@ -117,8 +117,8 @@ function calculate() {
         let wrongLength = sAnswers.filter(el => el.value === "false").length;
         let noAnswerLength = totalQA - (correctLength + wrongLength);
         let totalScore = correctLength - (wrongLength/4);
-        alert(`${totalQA} soruda ${correctLength} doğru ${wrongLength} yanlış ${noAnswerLength} boş. Toplam puanın ${totalScore}.
-        `);
+
+        $(".row").prepend(`${totalQA} soruda ${correctLength} doğru ${wrongLength} yanlış ${noAnswerLength} boş. Toplam puanın ${totalScore}. </br>`);
         
         
 
