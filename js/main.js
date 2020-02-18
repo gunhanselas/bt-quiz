@@ -98,7 +98,8 @@ function start() {
       $("#quizerSelf").html(`<div class="row"></div>`);
 
       quizer(seri[0].value,seri[1].value);
-          
+      let scrollEl = document.getElementById("quizerSelf");
+      scrollEl.scrollIntoView();
           
       
           };
@@ -116,11 +117,59 @@ function calculate() {
         let correctLength = sAnswers.filter(el => el.value === "true").length;
         let wrongLength = sAnswers.filter(el => el.value === "false").length;
         let noAnswerLength = totalQA - (correctLength + wrongLength);
-        let totalScore = correctLength - (wrongLength/4);
+        let totalNet = correctLength - (wrongLength/4);
+        let totalScore = totalNet * (100 / totalQA);
 
-        $(".row").prepend(`${totalQA} soruda ${correctLength} doğru ${wrongLength} yanlış ${noAnswerLength} boş. Toplam puanın ${totalScore}. </br>`);
+        $(".row").prepend(`
+        <div id="results" class="col-sm-12 p-2">
+                    <div class="resultsHeader">
+                        <div class="score">${totalScore} / 100</div>
+                        <h1>Sonuçlar</h1>
+                    </div>
+                    <div class="resultBody">
+                        <div class="item">
+                            <div class="number">
+                            ${totalQA} 
+                            </div>
+                            <div class="word">
+                                soru
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="number">
+                            ${correctLength} 
+                            </div>
+                            <div class="word">
+                                doğru
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="number">
+                            ${wrongLength} 
+                            </div>
+                            <div class="word">
+                                yanlış
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="number">
+                            ${noAnswerLength} 
+                            </div>
+                            <div class="word">
+                                boş
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="number">
+                            ${totalNet} 
+                            </div>
+                            <div class="word">
+                                net
+                            </div>
+                        </div>
+                    </div>
+                </div>`);
         sAnswers.forEach(function(el,index){
-            console.log(el);
             if(el.value === "true") {
             $(".card").eq(index).addClass("border-success");
             $(".card-footer").eq(index).addClass("bg-success text-white");   $(".card-footer").eq(index).removeClass("text-muted");
@@ -143,7 +192,8 @@ function calculate() {
                 $("label[for='"+ correctAnswerRadioID +"']").addClass("bg-success text-white");
                 $(".card-footer").eq(index).addClass("bg-warning text-white");   $(".card-footer").eq(index).removeClass("text-muted");
             }
-
+            let scrollEl = document.getElementById("results");
+            scrollEl.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         });
         
 

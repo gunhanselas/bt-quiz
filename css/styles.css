@@ -1,7 +1,11 @@
-/* header {
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+header {
     border-bottom: 5px solid black;
     padding: 5px;
 }
+
+
+/*
 .inputGroup {
     background-color: #fff;
     display: block;
@@ -109,17 +113,71 @@
     padding: 0 8px;
   }
    */
-   .card-body input:checked  + label{
-    font-weight: bold;
+
+#results {
+    border-bottom: 1px solid black;
+    margin-bottom: 2rem;
+}
+
+.resultsHeader {
+    position: relative;
+}
+
+.score {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 6vw;
+    color: rgb(150, 25, 25);
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    transform: rotate(-8deg);
+    /* Legacy vendor prefixes that you probably don't need... */
+    /* Safari */
+    -webkit-transform: rotate(-8deg);
+    /* Firefox */
+    -moz-transform: rotate(-8deg);
+    /* IE */
+    -ms-transform: rotate(-8deg);
+    /* Opera */
+    -o-transform: rotate(-8deg);
+}
+
+.resultBody {
+    text-align: center;
+}
+
+.resultBody .item {
+    display: inline-block;
+    text-align: center;
+    margin: 1rem 0;
+    padding: 2rem;
+    border-right: 2px solid black;
+    ;
+}
+
+.resultBody .item:last-child {
+    border: none;
+}
+
+.resultBody .item .number {
+    font-size: 3rem;
+}
+
+.resultBody .item .word {
+    font-variant: small-caps;
+}
+
+.card-body input:checked+label {
     color: #fff;
-    background-color: #6c757d;
-   }
-   .card-body input  + label{
+    background-color: #b8babb;
+}
+
+.card-body input+label {
     color: #343a40;
     padding: .5rem;
     display: block;
     border-radius: .25rem;
-    border: 1px solid #dee2e6;
+    border: 1px solid #ddd;
     cursor: pointer;
     background-color: #eee;
-   }
+}
