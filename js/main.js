@@ -129,7 +129,7 @@ function calculate() {
             </div>
             <div class="resultBody">
                 <div class="d-flex bd-highlight">
-                    <div class="p-2  correctBar ">
+                    <div class="p-2 rounded-left  correctBar">
                         <div class="number">${correctLength} </div> 
                        <div class="word">doğru</div> 
                     </div>
@@ -137,13 +137,12 @@ function calculate() {
                         <div class="number">${wrongLength} </div> 
                        <div class="word">yanlış</div> 
                     </div>
-                </div>
-                <div class="d-flex bd-highlight">
+                
                     <div class="p-2 skippedBar">
                         <div class="number">${noAnswerLength} </div> 
                        <div class="word">boş</div> 
                     </div>
-                    <div class="p-2  netBar">
+                    <div class="p-2 rounded-right netBar">
                         <div class="number">${totalNet}</div> 
                        <div class="word">net</div> 
                     </div>
