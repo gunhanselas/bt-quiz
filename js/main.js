@@ -75,7 +75,7 @@ else if(qType === "final") {
           </div>
           
         </div>`;
-        $(".row").append(questionTemplate);
+        $("#exam").append(questionTemplate);
         
              }
              
@@ -95,7 +95,7 @@ data.forEach(e => {
 function start() {
       let seri = $("#quizerForm").serializeArray();
       $("#quizerSelf").html("");
-      $("#quizerSelf").html(`<div class="row"></div>`);
+      $("#quizerSelf").html(`<div class="row m-1"><div id="exam" class="row"></div>`);
 
       quizer(seri[0].value,seri[1].value);
       let scrollEl = document.getElementById("quizerSelf");
@@ -120,55 +120,34 @@ function calculate() {
         let totalNet = correctLength - (wrongLength/4);
         let totalScore = totalNet * (100 / totalQA);
 
-        $(".row").prepend(`
-        <div id="results" class="col-sm-12 p-2">
-                    <div class="resultsHeader">
-                        <div class="score">${totalScore} / 100</div>
-                        <h1>Sonuçlar</h1>
+        $("#results").prepend(`
+                <div class="resultsHeader">
+                <div class="score">${totalScore} / 100</div>
+                <h1>Sonuçlar</h1>
+            </div>
+            <div class="resultBody">
+                <div class="d-flex bd-highlight">
+                    <div class="p-2  correctBar ">
+                        <div class="number">${correctLength} </div> 
+                       <div class="word">doğru</div> 
                     </div>
-                    <div class="resultBody">
-                        <div class="item">
-                            <div class="number">
-                            ${totalQA} 
-                            </div>
-                            <div class="word">
-                                soru
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="number">
-                            ${correctLength} 
-                            </div>
-                            <div class="word">
-                                doğru
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="number">
-                            ${wrongLength} 
-                            </div>
-                            <div class="word">
-                                yanlış
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="number">
-                            ${noAnswerLength} 
-                            </div>
-                            <div class="word">
-                                boş
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="number">
-                            ${totalNet} 
-                            </div>
-                            <div class="word">
-                                net
-                            </div>
-                        </div>
+                    <div class="p-2 wrongBar">
+                        <div class="number">${wrongLength} </div> 
+                       <div class="word">yanlış</div> 
                     </div>
-                </div>`);
+                </div>
+                <div class="d-flex bd-highlight">
+                    <div class="p-2 skippedBar">
+                        <div class="number">${noAnswerLength} </div> 
+                       <div class="word">boş</div> 
+                    </div>
+                    <div class="p-2  netBar">
+                        <div class="number">${totalNet}</div> 
+                       <div class="word">net</div> 
+                    </div>
+                  </div>
+             
+            </div>`);
         sAnswers.forEach(function(el,index){
             if(el.value === "true") {
             $(".card").eq(index).addClass("border-success");
