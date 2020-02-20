@@ -118,7 +118,7 @@ function calculate() {
         let wrongLength = sAnswers.filter(el => el.value === "false").length;
         let noAnswerLength = totalQA - (correctLength + wrongLength);
         let totalNet = correctLength - (wrongLength/4);
-        let totalScore = totalNet * (100 / totalQA);
+        let totalScore = totalNet * (100 / totalQA) < 0 ? 0 : totalNet * (100 / totalQA);
 
         $("#results").prepend(`
                 <div class="resultsHeader">
