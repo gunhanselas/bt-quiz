@@ -95,6 +95,7 @@ data.forEach(e => {
 function start() {
       let seri = $("#quizerForm").serializeArray();
       $("#quizerSelf").html("");
+      $("#results").html("");
       $("#quizerSelf").html(`<div class="row m-1"><div id="exam" class="row"></div>`);
 
       quizer(seri[0].value,seri[1].value);
@@ -104,6 +105,7 @@ function start() {
       
           };
 function calculate() {
+    $("#results").html("");
     let sAnswers = $(".form").serializeArray();
     let totalQA = $(".card").length;
     let i = 0;
